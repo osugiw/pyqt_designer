@@ -1,0 +1,143 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"D:/AppsInstaller/PyQT/6.6.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 716,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 633,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2323,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 2326,
+				"parent" : 3
+			}
+		]
+	},
+	"id" : "appqml-cpp-example_tooling::@6890427a1f51a3e7e1df",
+	"name" : "appqml-cpp-example_tooling",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/main.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/LumberMillBlock.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/assets/circular-saw.gif",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/assets/built-with-qt-badge.png",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/main.qml.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/LumberMillBlock.qml.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/assets/circular-saw.gif.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample/assets/built-with-qt-badge.png.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "INTERFACE_LIBRARY"
+}

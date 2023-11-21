@@ -1,0 +1,78 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "LumberSawController",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "isWorking",
+                    "notify": "isWorkingChanged",
+                    "read": "isWorking",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "sawSpeed",
+                    "notify": "sawSpeedChanged",
+                    "read": "sawSpeed",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "write": "setSawSpeed"
+                }
+            ],
+            "qualifiedClassName": "LumberSawController",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "isWorkingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "sawSpeedChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "name": "start",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "stop",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "lumbersawcontroller.h",
+    "outputRevision": 68
+}

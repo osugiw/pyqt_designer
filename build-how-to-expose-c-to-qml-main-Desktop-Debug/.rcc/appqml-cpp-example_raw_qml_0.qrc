@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/QmlCppExample/">
+    <file alias="main.qml">D:/Self-Learning/PyQT/how-to-expose-c-to-qml-main/main.qml</file>
+    <file alias="LumberMillBlock.qml">D:/Self-Learning/PyQT/how-to-expose-c-to-qml-main/LumberMillBlock.qml</file>
+    <file alias="assets/circular-saw.gif">D:/Self-Learning/PyQT/how-to-expose-c-to-qml-main/assets/circular-saw.gif</file>
+    <file alias="assets/built-with-qt-badge.png">D:/Self-Learning/PyQT/how-to-expose-c-to-qml-main/assets/built-with-qt-badge.png</file>
+  </qresource>
+</RCC>
+

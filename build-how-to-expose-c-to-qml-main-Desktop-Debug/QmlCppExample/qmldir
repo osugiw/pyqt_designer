@@ -1,0 +1,5 @@
+module QmlCppExample
+typeinfo appqml-cpp-example.qmltypes
+prefer :/QmlCppExample/
+LumberMillBlock 1.0 LumberMillBlock.qml
+

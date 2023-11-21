@@ -1,0 +1,188 @@
+
+
+/*
+This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
+It is supposed to be strictly declarative and only uses a subset of QML. If you edit
+this file manually, you might introduce QML code that is not supported by Qt Design Studio.
+Check out https://doc.qt.io/qtcreator/creator-quick-ui-forms.html for details on .ui.qml files.
+*/
+import QtQuick 6.5
+import QtQuick.Controls 6.5
+import ToDoList_Demo
+import QtQuick.Layouts
+
+Rectangle {
+    id: rectangle
+    width: Constants.width
+    height: 800
+    color: "#bababa"
+    property bool isDialogOpen: false
+
+
+
+    Text {
+        id: text1
+        text: qsTr("To Do")
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        font.pixelSize: 24
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        anchors.rightMargin: 10
+        anchors.leftMargin: 10
+        anchors.topMargin: 10
+    }
+
+
+
+    Button {
+        id: addToDoButton
+        y: 535
+        text: qsTr("Add ToDo")
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.rightMargin: 10
+        anchors.leftMargin: 10
+        anchors.bottomMargin: 10
+
+        Connections {
+            target: addToDoButton
+            onClicked: rectangle.isDialogOpen = !rectangle.isDialogOpen
+        }
+    }
+
+
+
+    Rectangle {
+        id: addToDialog
+        x: 10
+        y: 599
+        width: 380
+        height: 138
+        visible: rectangle.isDialogOpen
+        color: "#e0e0e0"
+        radius: 20
+
+        TextField {
+            id: toDoTextInput
+            height: 60
+            visible: true
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: parent.top
+            font.pointSize: 15
+            layer.format: ShaderEffectSource.Alpha
+            transformOrigin: Item.TopLeft
+            placeholderTextColor: "#886084a9"
+            hoverEnabled: true
+            clip: false
+            anchors.rightMargin: 25
+            anchors.leftMargin: 25
+            anchors.topMargin: 17
+            placeholderText: qsTr("Add To Do")
+        }
+
+        RowLayout {
+            y: 93
+            height: 40
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.rightMargin: 25
+            anchors.leftMargin: 25
+            spacing: 50
+            Button {
+                id: cancelButton
+                text: qsTr("Cancel")
+                topInset: 0
+                flat: false
+                highlighted: false
+                Layout.fillWidth: true
+
+//                Connections {
+//                    target: cancelButton
+//                    onClicked: rectangle.isDialogOpen = false
+//                }
+
+                Connections {
+                    target: cancelButton
+                    onClicked: toDoTextInput.text = ""
+                }
+            }
+
+            Button {
+                id: addButton
+                text: qsTr("Add")
+                highlighted: false
+                Layout.fillWidth: true
+
+                Connections {
+                    target: addButton
+                    onClicked: {
+                        rectangle.isDialogOpen = false
+                        toDoTextInput.text = ""
+}
+                }
+
+                Connections {
+                    target: addButton
+                    onClicked: myListModel.append(myListModel.createListElement())
+                }
+            }
+        }
+    }
+
+
+
+    Column {
+        id: column
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        spacing: 20
+        anchors.topMargin: 50
+        anchors.rightMargin: 10
+        anchors.leftMargin: 10
+        anchors.bottomMargin: 100
+
+        Repeater {
+            id: repeater
+            anchors.fill: parent
+            model : ListModel {
+                id: myListModel
+                ListElement{
+                    name: "My To Do"
+                }
+                function createListElement(){
+                    return {
+                    "name" : toDoTextInput.text
+                    }
+                }
+            }
+
+            Rectangle {
+                id: toDoItem
+                x: 10
+                y: 11
+                width: 360
+                height: 61
+                color: "#e0e0e0"
+                radius: 10
+
+                CheckBox {
+                    id: checkBox
+                    text: name
+                    anchors.left: parent.left
+                    anchors.top: parent.top
+                    anchors.bottom: parent.bottom
+                    anchors.leftMargin: 0
+                    anchors.bottomMargin: 0
+                    anchors.topMargin: 0
+                    font.pointSize: 22
+                }
+            }
+        }
+    }
+}

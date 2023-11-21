@@ -1,0 +1,14 @@
+-rootPath
+D:/Self-Learning/PyQT/how-to-expose-c-to-qml-main
+-cmake-output
+-output-file
+D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appqml-cpp-example.cmake
+-importPath
+D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample
+-importPath
+D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug
+-importPath
+D:/AppsInstaller/PyQT/6.6.0/mingw_64/./qml
+-qrcFiles
+D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/.rcc/qmake_QmlCppExample.qrc
+D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/.rcc/appqml-cpp-example_raw_qml_0.qrc

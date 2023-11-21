@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/QmlCppExample">D:/Self-Learning/PyQT/build-how-to-expose-c-to-qml-main-Desktop-Debug/QmlCppExample</file>
+
+  </qresource>
+</RCC>
